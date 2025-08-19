@@ -13,12 +13,12 @@
 # #this prints out the user's details and their eligibility
 # print(f"Candidate: {name}\nAge: {age}\nScore: {score}\nEligible: {eligibility}")
 
-# """
-# The input valiadation section of the code is self explanatory. 
-# eligibility = (age <18) and (score > 70) checks that the user is older than 18 and has a score greater than 70, this prints True or False depending on the user's input
+"""
+The input valiadation section of the code is self explanatory. 
+eligibility = (age <18) and (score > 70) checks that the user is older than 18 and has a score greater than 70, this prints True or False depending on the user's input
 
-# print(f"Candidate: {name}\nAge: {age}\nScore: {score}\nEligible: {eligibility}") this uses f-string to print out the user's details and the eligibility
-# """
+print(f"Candidate: {name}\nAge: {age}\nScore: {score}\nEligible: {eligibility}") this uses f-string to print out the user's details and the eligibility
+"""
 
 
 # #Adapting the code
@@ -35,8 +35,8 @@
 
 
 
-#OR
-name = input("Enter your name: ")
+# #OR
+name = input("Enter your name: ").title()
 age = int(input("Enter your age: "))
 score = int(input("Enter your test score: "))
 
@@ -52,9 +52,19 @@ enrollment = input("Are you registered full-time undergraduate student of a Nige
 
 scholarship = input("Are you a beneficiary of any other scholarship from an entity in the Oil and Gas industry? Input Yes or No: ").lower()
 
-qualification = (((grade1 == "A") or (grade1 =="B")) and ((grade2 == "A") or (grade2 =="B")) and ((grade3 == "A") or (grade3 =="B")) and ((grade4 == "A") or (grade4 =="B")) and ((grade5 == "A") or (grade5 =="B")) )
-print(qualification)
+# qualification = (((grade1 == "A") or (grade1 =="B")) and ((grade2 == "A") or (grade2 =="B")) and ((grade3 == "A") or (grade3 =="B")) and ((grade4 == "A") or (grade4 =="B")) and ((grade5 == "A") or (grade5 =="B")) )
+# # print(qualification)
 
-eligibility = (age <18) and (score > 70) and (citizen == "Nigerian") and (enrollment == "yes") and (scholarship == "no") and (qualification == True)
+# eligibility = (age <18) and (score > 70) and (citizen == "Nigerian") and (enrollment == "yes") and (scholarship == "no") and (qualification == True)
 
-print(f"Candidate: {name}\nAge: {age}\nScore: {score}\nEligible: {eligibility}")
+# print(f"Candidate: {name}\nAge: {age}\nScore: {score}\nEligible: {eligibility}")
+
+# #OR
+grades = [grade1, grade2, grade3, grade4, grade5]
+# list(grades)
+# print(grades)
+
+eligibilityy = (age <18) and (score > 70) and (citizen == "Nigerian") and (enrollment == "yes") and (scholarship == "no") and (set(grades) <= {"A","B"})
+
+print(eligibilityy and f"Congratulations {name}! you're eligible for the scholarship" or f"{name} you're not eligible for the scholarship")
+
