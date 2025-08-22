@@ -6,10 +6,10 @@
 """
 THE LOGICAL PROCESS
 accepted ussd from user, used strip to mitigate user error
-checks if the user input is right
+checks if the user USSD input is right
 used while True to ensure that the programs runs as long as the specified conditions are satisfied, otherwise, it prints an error message and restarts the loop
 
-Accepts input from user regarding their desired service (check balance...)
+Accepts input from user regarding their desired service (for example, check balance...)
 check if the user's input aligns with any of the predefined premises, for example, an input of  1 = should check data and airtime balance. Else it prints an error message and restarts the loop
 If the user's input aligns with the required condition it prints out the appropriate messages, and breaks the program
 """
