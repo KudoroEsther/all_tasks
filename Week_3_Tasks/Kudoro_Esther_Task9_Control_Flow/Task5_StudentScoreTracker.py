@@ -5,7 +5,7 @@
 names = []
 scores = []
 
-for i in range (1,4): #this runs the loop 4 times
+for i in range (1,4): #this runs the loop 3 times
     name = input("Enter the students name: ").strip().title()
     names.append(name) #adds the inputted name to the empty list
 
