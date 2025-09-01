@@ -1,4 +1,6 @@
 #Error Handling
+#Student Score Tracker
+
 names = []
 scores = []
 
@@ -10,9 +12,9 @@ try:
         score = float(input(f"Enter {name}'s score: "))
         scores.append(score)
         total= zip(names,scores) #attaches the each score to the right name
-
+        
     print("Name \tScore")
-    for x,y in total: #attaches te contents of names to x and the content of scores to y
+    for x,y in total: #attaches the contents of names to x and the content of scores to y
         print(f"{x} \t {y}") #this prints out x and y with a tab between them
         # print(f"{scores}")
 except ValueError:
