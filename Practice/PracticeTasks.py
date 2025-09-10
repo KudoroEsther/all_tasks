@@ -57,40 +57,41 @@
 
 #TASK 7
 #Task 1 Student biodata storage
-# bio = {}
-# total_bio = {}
+total_bio = {}
 
-# while True: 
-#     name = input("\nPlease enter your name: ").strip().title()
-#     age = int(input("Please enter your age: "))
-#     gender = input("Please enter your gender: ").strip().title()
-#     courses = ["Math", "English", "Geography", "Biology", "Economics"]
+while True: 
+    bio = {}
 
-#     # bio["Name"] = name
-#     bio["Age"] = age
-#     bio["Gender"] = gender
-#     bio["Course"] = courses
+    name = input("\nPlease enter your name: ").strip().title()
+    age = int(input("Please enter your age: "))
+    gender = input("Please enter your gender: ").strip().title()
+    courses = ["Math", "English", "Geography", "Biology", "Economics"]
 
-#     total_bio[name] = bio
+    # bio["Name"] = name
+    bio["Age"] = age
+    bio["Gender"] = gender
+    bio["Course"] = courses
 
-#     ends = input("Type end to exit the program: ").strip().lower()
-#     if ends == "end":
-#         print("Ending the program...")
-#         break
-#     else:
-#         continue
-# print(total_bio)
-# # bio.update({'Name': name})
+    total_bio[name] = bio
 
-#Super market price list
-items = ["Sneakers", "Mars", "Water"]
-prices = []
+    ends = input("Type end to exit the program: ").strip().lower()
+    if ends == "end":
+        print("Ending the program...")
+        break
+    else:
+        continue
+print(total_bio)
+# bio.update({'Name': name})
 
-for i in items:
-    price = int(input(f"Enter the price for {i}: "))
-    prices.append(price)
+# #Super market price list
+# items = ["Sneakers", "Mars", "Water"]
+# prices = []
 
-print("ITEM \t PRICE")
-for x , y in zip(items, prices):
-    print(f"{x}: {y}")
-print(prices)
+# for i in items:
+#     price = int(input(f"Enter the price for {i}: "))
+#     prices.append(price)
+
+# print("ITEM \t PRICE")
+# for x , y in zip(items, prices):
+#     print(f"{x}: {y}")
+# print(prices)
